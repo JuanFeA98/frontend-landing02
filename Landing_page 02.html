@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/Landing_page 02.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <section>
+        <div class="logo">Creative</div>
+        <img src="./Imagenes/bg.jpg" class="bg">
+        <div class="content">
+            <h2>Let´s make <br> Something Creative</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, culpa. Blanditiis eaque cupiditate dignissimos voluptates distinctio at unde excepturi doloremque optio est! Tenetur tempora ab pariatur sequi veritatis eaque dolores, quidem aperiam maxime aut, ratione amet odio rem perspiciatis totam! Reprehenderit, in nulla magnam quas totam optio ad sequi porro?</p>
+            <a href="#">Get Started</a>
+        </div>
+        <p class="copyrightText">©2020. Online Tutorials</p>
+    </section>
+    <div class="menutoogle" onclick="toggleMenu();"></div>
+    <div class="navigation">
+        <ul class="menuoptions">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="socialBar">
+            <ul>
+                <li><a href="#"><img src="./Imagenes/facebook.png" style="margin-left: 10px;"></a></li>
+                <li><a href="#"><img src="./Imagenes/twitter.png"></a></li>
+                <li><a href="#"><img src="./Imagenes/instagram.png"></a></li>
+            </ul>
+            <a href="#" class="emailBox"><img src="./Imagenes/email.png"></a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function toggleMenu(){
+            let menuToogle = document.querySelector('.menutoogle');
+            menuToogle.classList.toggle('active');
+            let navigation = document.querySelector('.navigation');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
